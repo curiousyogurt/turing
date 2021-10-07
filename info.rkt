@@ -1,5 +1,6 @@
 #lang info
 
+(define collection "turing")
 (define name "turing")
 (define version "1.0")
 (define pkg-authors '(Darcy Otto))
