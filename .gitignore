@@ -1,4 +1,5 @@
-**.rkt~
-**.scrbl~
-.DS_store
-compiled
+*~
+\#*
+.\#*
+compiled/
+.DS_Store
