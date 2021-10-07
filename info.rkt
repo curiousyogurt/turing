@@ -6,4 +6,4 @@
 (define pkg-desc "Turing language for Racket, modelled on Alan Turing's 1936 paper.")
 
 (define deps '("base"))
-(define scribblings '(("scribblings/turing.scrbl" (multi-page))))
+(define scribblings '(("scribblings/turing.scrbl" ())))
