@@ -14,7 +14,7 @@
 
 ;;;;
 ;;;; Where all the heavy lifting of the Turing machine is done.  Execute kicks
-;;;; thinsg of and does some parsing.  The main loop is taken care of by the
+;;;; things off and does some parsing.  The main loop is taken care of by the
 ;;;; run function.
 ;;;; 
 (provide execute)
