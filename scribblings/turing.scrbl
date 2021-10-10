@@ -23,6 +23,6 @@ Configuration               Behaviour
     e           None         P1, R            f
     f           None           R              b}}
 
-This table of instructions, when started with at blank tape with a Turing Machine in the @tt{b} state, will print @tt{0} and @tt{1} left-to-right across the tape.
+This table of instructions, when started with a blank tape and a Turing Machine in the @tt{b} state, will print @tt{0} and @tt{1} left-to-right continuously across the tape.
 
 [1] Turing, Alan M.  1936.  "On Computable Numbers, with an Application to the @italic{Entscheidungsproblem,}" @italic{Proceedings of the London Mathematical Society,} Series 2, Vol. XLII, 230–65.
