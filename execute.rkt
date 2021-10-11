@@ -2,10 +2,10 @@
 
 ;;;; Quick description of the language:
 ;;;;
-;;;; First line: #lang turing
-;;;; Secod line: <tape> with "_" for blanks
-;;;; Third line: <starting state> <starting position of head>
-;;;;             <step to start printing> <step to stop printing>
+;;;; First line : #lang turing
+;;;; Second line: <tape> with "_" for blanks
+;;;; Third line : <starting state> <starting position of head>
+;;;;              <step to start printing> <step to stop printing>
 ;;;; Instructions (subsequent lines): <m-configuration> <symbol> <operations> <final m-configuration>
 ;;;;
 ;;;; For <symbol>, use "*" for any (to match any symbol execpt "_").
