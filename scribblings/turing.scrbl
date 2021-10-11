@@ -6,7 +6,7 @@
 
 @section{Introduction}
 
-This is a domain-specific language for Turing Machines modelled on the language Alan Turing uses in his classic 1936 paper where he introduces Turing Machines.There are many Turing Machine implementations available, but none model the language that Turing uses.  This implementation for Racket gets very close.
+This is a domain-specific language modelled on the language Alan Turing uses in his classic 1936 paper where he introduces Turing Machines.There are many Turing Machine implementations available, but none model the language that Turing uses.  This implementation for Racket gets very close.
 
 @section{Background}
 
