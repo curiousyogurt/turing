@@ -141,7 +141,7 @@ Assuming the machine has a blank tape and starts in state @tt{b}, print @tt{0_1}
 @codeblock{
 b _ P0,R c
 c _ R e
-e _ P1 halt
+e _ P1 halt}
 
 Example 4 demonstrates the use of @tt{halt} as the final m-configuration. It follows the same pattern as Example 3, except that instead of going into an infinite loop, the machine goes into a halt state.
 
