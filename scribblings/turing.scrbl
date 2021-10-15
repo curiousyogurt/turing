@@ -124,7 +124,7 @@ Valid operations are @tt{R, L, P<symbol>, E}, and work as follows:
 
 @tt{E}: Erase the symbol on the current square.  This is equivalent to @tt{P_} (print underscore).
 
-@subsubsection{Table of Instructions Example}
+@subsubsection{Body Examples}
 
 @bold{Example 3}
 
@@ -163,7 +163,7 @@ The output of a machine running this table of instructions is @tt{0_1}, and the 
 
 Any line prefixed with @tt{;} is treated as a comment.  That is, everything that follows to the right of @tt{;} on the line is ignored.
 
-@section{A Complete Example}
+@section{Complete (Header and Body) Example}
 
 @bold{Example 5}
 
