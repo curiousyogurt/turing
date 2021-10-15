@@ -157,11 +157,13 @@ e _ P1 halt}
 
 Example 4 demonstrates the use of @tt{halt} as the final configuration. It follows much the same pattern as Example 3, except that instead of going into an infinite loop, the machine goes into a @tt{halt} configuration.
 
-The output of a machine running this table of instructions is @tt{0_1}, and the head is on square @t{2} when the machine goes into the @tt{halt} configuration.
+The output of a machine running this table of instructions is @tt{0_1}, and the head is on square @tt{2} when the machine goes into the @tt{halt} configuration.
 
-@subsubsection{Comments}
+@subsection{Whitespace and Comments}
 
-Any line prefixed with @tt{;} is treated as a comment.  That is, everything that follows to the right of @tt{;} on the line is ignored.
+Whitespace between lines in the header or the body is ignored.
+
+Any line beginning with @tt{;} is treated as a comment, and is ignored.  @tt{;} may also be used to start a comment at the end of any line in the body.
 
 @section{Complete (Header and Body) Example}
 
