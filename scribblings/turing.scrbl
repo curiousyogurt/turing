@@ -179,7 +179,7 @@ Here is code that produces the desired output, adapted minimally from Turing's p
 ;; Start with a blank tape
 _
 ;; Start in machine configuration b, with the head on square 0.
-;; Print the first 200 steps of the computation.s
+;; Print the first 200 steps of the computation.
 b 0 0 200
 ;; Table of instructions
 b _ Pə,R,Pə,R,P0,R,R,P0,L,L o
