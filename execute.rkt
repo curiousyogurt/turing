@@ -12,11 +12,11 @@
 ;;;; If <final m-configuration> is "halt" then the machine will halt after that instruction is run.
 ;;;;
 
-;;;;
-;;;; Where all the heavy lifting of the Turing machine is done.  Execute kicks
-;;;; things off and does some parsing.  The main loop is taken care of by the
-;;;; run function.
-;;;; 
+;;;
+;;; Where all the heavy lifting of the Turing machine is done.  Execute kicks
+;;; things off and does some parsing.  The main loop is taken care of by the
+;;; run function.
+;;; 
 (provide execute)
 
 ;;;
@@ -27,28 +27,33 @@
 ;;; (iii) Calling the run function
 ;;;
 (define (execute str)
-  ;; prg             : convenience for following elements except step
-  ;; step            : initialise step counter
-  ;; tape            : initial tape state (string)
-  ;; config-set      : convenience for four following elements (string)
-  ;; m-configuration : initial m-configuration (string)
-  ;; head            : starting position of head (integer)
-  ;; start           : start printing output at step (integer)
-  ;; end             : end execution at step (integer)
-  ;; instructions    : list of instructions
-  (let* ([prg (prepare-data str)]
-         [step 0]
-         [tape (first prg)]
-         [config-set (string-split (second prg))]
-         [m-configuration (first config-set)]
-         [head (string->number (second config-set))]
-         [start (string->number (third config-set))]
-         [end (string->number (fourth config-set))]
-         [instructions (parse-instructions (cddr prg))])
-    ;; show starting position (when start is 0)
-    (when (zero? start) (show-results tape m-configuration head -1))
-    ;; call run function with the parsed information
-    (run step tape m-configuration head start end instructions)))
+  ;; If no code, do nothing.
+  (if (empty? (prepare-data str))
+      (void)
+      ;; If there is code, parse and run it.
+      ;;
+      ;; prg             : convenience for following elements except step
+      ;; step            : initialise step counter
+      ;; tape            : initial tape state (string)
+      ;; config-set      : convenience for four following elements (string)
+      ;; m-configuration : initial m-configuration (string)
+      ;; head            : starting position of head (integer)
+      ;; start           : start printing output at step (integer)
+      ;; end             : end execution at step (integer)
+      ;; instructions    : list of instructions
+      (let* ([prg (prepare-data str)]
+             [step 0]
+             [tape (first prg)]
+             [config-set (string-split (second prg))]
+             [m-configuration (first config-set)]
+             [head (string->number (second config-set))]
+             [start (string->number (third config-set))]
+             [end (string->number (fourth config-set))]
+             [instructions (parse-instructions (cddr prg))])
+        ;; show starting position (when start is 0)
+        (when (zero? start) (show-results tape m-configuration head -1))
+        ;; call run function with the parsed information
+        (run step tape m-configuration head start end instructions))))
 
 ;;;
 ;;; Convert input to list of strings.  Filter out strings that are blank
