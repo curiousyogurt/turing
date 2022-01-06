@@ -1,6 +1,8 @@
 # Introduction
 
-`turing` is a domain-specific language modelled on the language Alan Turing uses in his classic 1936 paper where he introduces Turing Machines.[*] There are many Turing Machine implementations available, but none model the language that Turing uses very closely; this package for Racket tries to get very close. This repository is the source for the [turing package for Racket](https://pkgs.racket-lang.org/package/turing).  
+`turing` is a domain-specific language modelled on the language Alan Turing uses in his classic 1936 paper where he introduces Turing Machines.[*] There are many Turing Machine implementations available, but none model the language that Turing uses very closely; this package for Racket tries to get very close.
+
+This repository is the source for the [turing package for Racket](https://pkgs.racket-lang.org/package/turing).  
 
 [*] Turing, Alan M. 1936. "On Computable Numbers, with an Application to the Entscheidungsproblem," _Proceedings of the London Mathematical Society,_ Series 2, Vol. XLII, 230–65.
 
